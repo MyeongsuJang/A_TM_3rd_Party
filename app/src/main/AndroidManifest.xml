@@ -9,11 +9,13 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/third_party"
         android:label="@string/app_name"
-        
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.A_TM_3rd_Party"
         tools:targetApi="31">
+        <activity
+            android:name=".MyInfo_ProfileActivity"
+            android:exported="false" />
         <activity
             android:name=".MyInfoActivity"
             android:exported="false" />
