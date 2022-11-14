@@ -24,8 +24,13 @@ class MyInfo_ProfileActivity : AppCompatActivity() {
             val resultIntent = Intent()
 
             resultIntent.putExtra("nickname", inputNickname)
+            //사용자가 닉네임 지정한걸 "내정보"페이지로 넘기기위한 작업
+            //해당 id가 inputNickName
             setResult(Activity.RESULT_OK, resultIntent)
+            //공백의 Intent에 임시로 데이터 넣어주는 기능
+            //Stack에 쌓는거와 동일 구조
             finish()
+            // 안드로이드 구조상 각 액티비티들이 쌓이는 구조이므로 이전화면을 띄우고나서 현재 화면을 날려서 메모리 확보
         }
 
     }
